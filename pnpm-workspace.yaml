@@ -1,0 +1,11 @@
+packages:
+  - apps/*
+  - packages/*
+
+onlyBuiltDependencies:
+  - core-js
+  - esbuild
+  - msw
+  - protobufjs
+  - rolldown
+  - sharp

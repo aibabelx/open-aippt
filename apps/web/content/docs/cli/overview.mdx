@@ -1,0 +1,26 @@
+---
+title: Overview
+description: Two CLIs — one to scaffold, one to run.
+---
+
+open-aippt ships two CLIs:
+
+- **`@open-aippt/cli`** — the scaffolder. One command (`init`) to bootstrap
+  a new workspace.
+- **`@open-aippt/core`** — the runtime CLI. `dev`, `build`, `preview`, and
+  `sync:skills` for an existing workspace.
+
+After `init`, `package.json` exposes the runtime CLI under standard scripts:
+
+```json
+{
+  "scripts": {
+    "dev": "open-aippt dev",
+    "build": "open-aippt build",
+    "preview": "open-aippt preview",
+    "sync:skills": "open-aippt sync:skills"
+  }
+}
+```
+
+So in day-to-day use you'll just type `npm run dev`, `npm run build`, etc.
